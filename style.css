@@ -89,7 +89,8 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
-    margin-left: 50px; /* esquerda */
+    margin-left: 50px;
+    /* esquerda */
 
 
 }
@@ -100,16 +101,17 @@ body {
     color: white;
 
 
-    }
+}
 
 .caixa-central p {
     font-size: 15px;
     color: white;
 
-} 
+}
 
 
-.cardapio, .como-chegar {
+.cardapio,
+.como-chegar {
 
     background-color: chocolate;
     font-size: 10px;
@@ -129,44 +131,55 @@ body {
 }
 
 
- .os {
+.os {
     color: chocolate;
- }
+}
 
- .da {
+.da {
     color: #fae900;
- }
+}
 
 
 .caracteristicas {
-    display: flex;             /* Coloca as 3 divs em linha */
-    align-items: center;       /* Alinha verticalmente no centro */
-    justify-content: center;   /* Centraliza o conteúdo */
+    display: flex;
+    /* Coloca as 3 divs em linha */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    justify-content: center;
+    /* Centraliza o conteúdo */
 
 
     /* As linhas horizontais da imagem */
-    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 30px 0;           /* Espaçamento interno em cima e embaixo */
-    margin: 50px 0;            /* Espaçamento fora da seção */
-    width: 100%;               /* Ocupa a largura toda */
- }
-
- .caracteristicas > div {
-    flex: 1;                   /* Faz cada coluna ocupar o mesmo espaço (33% cada) */
-    text-align: center;        /* Centraliza o texto de cada coluna */
-    display: flex;
-    flex-direction: column;    /* Coloca o número em cima do texto */
-    gap: 5px;                  /* Espaço entre o número e o texto */
+    padding: 30px 0;
+    /* Espaçamento interno em cima e embaixo */
+    margin: 50px 0;
+    /* Espaçamento fora da seção */
+    width: 100%;
+    /* Ocupa a largura toda */
 }
- 
 
-.caracteristicas > div + div {
+.caracteristicas>div {
+    flex: 1;
+    /* Faz cada coluna ocupar o mesmo espaço (33% cada) */
+    text-align: center;
+    /* Centraliza o texto de cada coluna */
+    display: flex;
+    flex-direction: column;
+    /* Coloca o número em cima do texto */
+    gap: 5px;
+    /* Espaço entre o número e o texto */
+}
+
+
+.caracteristicas>div+div {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .caracteristicas div div:first-child {
-    color: #ff4500;            /* Cor laranja da logo */
+    color: #ff4500;
+    /* Cor laranja da logo */
     font-family: 'Bebas Neue', sans-serif;
     font-size: 45px;
     line-height: 1;
@@ -175,9 +188,11 @@ body {
 /* Estilizando os Textos de baixo (Cinza pequeno) */
 .caracteristicas div div:last-child {
     color: #808080;
-    text-transform: uppercase; /* Deixa em MAIÚSCULO */
+    text-transform: uppercase;
+    /* Deixa em MAIÚSCULO */
     font-size: 11px;
-    letter-spacing: 2px;       /* Espaçamento entre as letras */
+    letter-spacing: 2px;
+    /* Espaçamento entre as letras */
 }
 
 
@@ -189,4 +204,178 @@ body {
 
 .car {
     color: #fae900;
+}
+
+.conterner-cardapio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    color: aliceblue;
+    max-width: 1400px;
+    max-height: 1200;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card-item {
+    background-color: #1a1a1a;
+    border-bottom: 4px solid chocolate;
+    /* borda de destaque */
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+    align-items: flex-end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+.emojis {
+    font-size: 70px;
+
+
+}
+
+.titulos {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.button-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item p {
+
+    color: #808080;
+    /* Um cinza mais suave */
+    margin: 15px 0;
+    /* Dá espaço em cima e embaixo */
+    font-size: 15px;
+
+
+
+
+}
+
+
+.button-car {
+    width: 35px;
+    height: 35px;
+    background-color: #ff4500;
+    border: none;
+  
+
+}
+
+.card-footer span {
+
+    color: #fae900;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.vegano {
+    position: absolute;
+    top: 20px;
+    margin-left: 50px;
+    font-size: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+
+
+
+}
+
+
+.horarios {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center;
+    padding: 90px;
+   padding-right: 110px;
+   background-color: #ff4500;
+   max-width: 1400px;
+   margin: auto;
+   margin-top: 100px;
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 25px;
+   letter-spacing: 1px;
+}
+
+.horarios p {
+    font-size: 16px;
+}
+
+.aproveita {
+
+    background-color: #ffffff;
+    color: #ff4500;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    
+    
+}
+
+.por {
+    color: black;
+}
+
+.carne {
+    width: 50%;
+    margin-top: 160px;
+    margin-left: 10%;
+}
+
+.img-carne {
+    width: 100%;
+}
+
+.historia {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+.historia-smash {
+    color: #fae900;
+    
+}
+
+.historia-texto {
+    width: 50%;
+}
+
+
+.historia-texto h2  {
+    font-size: 40px;
+}
+
+.historia-texto p {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.historia-texto ul {
+    margin-top: 30px;
+    font-size: 20px;
 }
